@@ -1,0 +1,22 @@
+User Experience (UX)
+
+Website Data Fabric for PT. XL Axiata
+
+#Problems
+- Data pengguna layanan telekomunikasi belum terintegrasi
+  antara divisi satu dengan divisi lainnya dalam perusahaan
+- Untuk mendapatkan Business Insight layanan telekomunikasi
+  masih secara manual dalam analysis data penggunanya seperti
+  melakukan penarikan data satu per satu dari masing-masing divisi
+
+#Market/User (UX/Customer persona)
+- Seluruh karyawan pada masing-masing divisi di perusahaan PT. XL Axiata
+
+#Pain Points Customer
+- Tidak dapat melihat visualisasi data secara menyeluruh untuk 
+  mendapatkan business insight yang baru
+
+#Goals
+- Karyawan bisa menentukan business insight yang baru dengan efisien
+- Karyawan dapat menggunakan data yang dibutuhkan dari masing-masing
+  divisi tanpa harus request ke divisi lainnya 
