@@ -19,6 +19,39 @@
     </form>
 
     <script>
+        const fileInput = document.querySelector('input');
+        const preview = document.getElementById('preview');
+
+        fileInput.addEventListener('change', () => {
+
+            const fr = new FileReader();
+
+            fr.readAsText(fileInput.files[0]);
+
+            fr.addEventListener('load', () => {
+                const csv = fr.result;
+                const array = csv.split('\r\n').map((line) => {
+                    return line.split(',');
+                });
+
+                const table = document.createElement('table');
+
+                array.forEach(line => {
+                    const tr = document.createElement('tr');
+
+                    line.forEach(cell => {
+                        const td = document.createElement('td');
+                        td.textContent = cell;
+                        tr.appendChild(td);
+                    })
+
+                    table.appendChild(tr);
+                })
+
+                preview.appendChild(table);
+            })
+
+        })
         document.getElementById('form').addEventListener('submit', function(e) {
             e.preventDefault();
 
